@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEDC RIT Ideathon | Prominence 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        .circuit-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #2563eb;
+            border: 4px solid #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9e17806c-d8fc-4852-92c5-96d104719ad5.png" alt="IEDC RIT logo - Innovation and Entrepreneurship Development Cell logo with blue and white colors" class="h-12">
+                    <div>
+                        <span class="font-bold text-xl">IEDC RIT</span>
+                        <span class="block text-sm text-gray-500">Prominence 2024</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#details" class="text-gray-700 hover:text-blue-600">Details</a>
+                    <a href="#schedule" class="text-gray-700 hover:text-blue-600">Schedule</a>
+                    <a href="#register" class="text-gray-700 hover:text-blue-600">Register</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white pb-4 px-4">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+            <a href="#details" class="block py-2 text-gray-700 hover:text-blue-600">Details</a>
+            <a href="#schedule" class="block py-2 text-gray-700 hover:text-blue-600">Schedule</a>
+            <a href="#register" class="block py-2 text-gray-700 hover:text-blue-600">Register</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 circuit-pattern">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">IEDC RIT Ideathon</h1>
+            <h2 class="text-xl md:text-2xl mb-8">Part of Prominence 2024 - The Annual Technical Fest</h2>
+            <div class="flex justify-center mb-10">
+                <div class="inline-block bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-lg p-6">
+                    <!--<div class="countdown flex space-x-4">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold days">00</span>
+                            <span class="text-sm">Days</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold hours">00</span>
+                            <span class="text-sm">Hours</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold minutes">00</span>
+                            <span class="text-sm">Minutes</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold seconds">00</span>
+                            <span class="text-sm">Seconds</span>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <a href="#register" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                Register Now
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About The Event</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b453a9a-b733-4539-b50a-d8112cb19abf.png" alt="Group of diverse students working together on a tech project in an innovation lab" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Innovation & Entrepreneurship Development Cell</h3>
+                    <p class="mb-4 text-gray-700">IEDC RIT is the premier student-run hub for fostering innovation, entrepreneurship, and technical excellence at Rajiv Gandhi Institute of Technology. Our mission is to nurture the next generation of tech leaders and problem solvers.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8 text-blue-600">Ideathon 2024</h3>
+                    <p class="mb-4 text-gray-700">As part of Prominence 2024, the annual technical fest of RIT, we present the Ideathon - a platform for students to showcase their innovative ideas and solutions to real-world problems.</p>
+                    <p class="text-gray-700">This 24-hour hackathon will challenge participants to think creatively, collaborate effectively, and develop prototypes for their innovative ideas in technology and entrepreneurship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section id="details" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Event Details</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Theme -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-calendar fa-3x mb-2"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Theme</h3>
+                    <p class="text-gray-700">"Sustainable Technology for a Better Future" - Innovate solutions that address pressing environmental and social challenges through technology.</p>
+                </div>
+                
+                <!-- Problem Statements -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-question-circle fa-3x mb-2"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Problem Statements</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Waste Management Solutions</li>
+                        <li>Renewable Energy Applications</li>
+                        <li>Smart City Technologies</li>
+                        <li>Healthcare Innovations</li>
+                        <li>Open Innovation Track</li>
+                    </ul>
+                </div>
+                
+                <!-- Prizes -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-trophy fa-3x mb-2"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Prizes</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>1st Prize: ₹25,000 + Incubation Support</li>
+                        <li>2nd Prize: ₹15,000 + Mentorship</li>
+                        <li>3rd Prize: ₹10,000</li>
+                        <li>Special Category Awards</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-blue-600">Eligibility & Rules</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>Open to all undergraduate and postgraduate students</li>
+                    <li>Teams of 2-4 participants</li>
+                    <li>Original ideas only - no plagiarism</li>
+                    <li>Judging criteria: Innovation, Feasibility, Impact, Presentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Event Schedule</h2>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-8 md:left-1/2 h-full w-1 bg-gray-200 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-10">
+                    <!-- Item 1 -->
+                    <div class="relative pl-16 md:pl-0 md:flex justify-between items-center timeline-item">
+                        <div class="md:w-5/12 md:text-right pr-8">
+                            <h3 class="text-xl font-bold mb-2">Registration & Check-in</h3>
+                            <p class="text-gray-600">9:00 AM - 10:00 AM</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 text-center">
+                            <div class="mx-auto rounded-full bg-blue-600 text-white w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 pt-4 md:pt-0">
+                            <p class="text-gray-700">Participants arrive, complete registration formalities, and receive event materials.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="relative pl-16 md:pl-0 md:flex justify-between items-center timeline-item">
+                        <div class="md:w-5/12 md:text-right pr-8">
+                            <h3 class="text-xl font-bold mb-2">Inauguration & Keynote</h3>
+                            <p class="text-gray-600">10:00 AM - 11:00 AM</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 text-center">
+                            <div class="mx-auto rounded-full bg-blue-600 text-white w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 pt-4 md:pt-0">
+                            <p class="text-gray-700">Official inauguration by dignitaries followed by an inspiring keynote address on innovation.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="relative pl-16 md:pl-0 md:flex justify-between items-center timeline-item">
+                        <div class="md:w-5/12 md:text-right pr-8">
+                            <h3 class="text-xl font-bold mb-2">Hacking Begins</h3>
+                            <p class="text-gray-600">11:30 AM</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 text-center">
+                            <div class="mx-auto rounded-full bg-blue-600 text-white w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 pt-4 md:pt-0">
+                            <p class="text-gray-700">The 24-hour coding and ideation marathon begins. Mentors will be available throughout.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more timeline items similarly -->
+                    
+                    <!-- Item 4 -->
+                    <div class="relative pl-16 md:pl-0 md:flex justify-between items-center timeline-item">
+                        <div class="md:w-5/12 md:text-right pr-8">
+                            <h3 class="text-xl font-bold mb-2">Final Submissions</h3>
+                            <p class="text-gray-600">Next Day 10:00 AM</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 text-center">
+                            <div class="mx-auto rounded-full bg-blue-600 text-white w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 pt-4 md:pt-0">
+                            <p class="text-gray-700">Teams submit their final prototypes and presentation materials.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="relative pl-16 md:pl-0 md:flex justify-between items-center timeline-item">
+                        <div class="md:w-5/12 md:text-right pr-8">
+                            <h3 class="text-xl font-bold mb-2">Presentations & Judging</h3>
+                            <p class="text-gray-600">Next Day 11:00 AM - 1:00 PM</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 text-center">
+                            <div class="mx-auto rounded-full bg-blue-600 text-white w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-chalkboard"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 pt-4 md:pt-0">
+                            <p class="text-gray-700">Teams present their solutions to the judging panel. Each team gets 8 minutes.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="relative pl-16 md:pl-0 md:flex justify-between items-center timeline-item">
+                        <div class="md:w-5/12 md:text-right pr-8">
+                            <h3 class="text-xl font-bold mb-2">Awards & Closing</h3>
+                            <p class="text-gray-600">Next Day 2:00 PM</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 text-center">
+                            <div class="mx-auto rounded-full bg-blue-600 text-white w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-award"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 pt-4 md:pt-0">
+                            <p class="text-gray-700">Winners announced and prizes distributed. Closing ceremony and networking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="py-16 bg-gray-50">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Register for Ideathon</h2>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <form   name="submit-to-google-sheet">
+                    <div class="mb-6">
+                        <label for="teamName" class="block text-gray-700 font-medium mb-2">Team Name</label>
+                        <input type="text" name="team name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="teamLeader" class="block text-gray-700 font-medium mb-2">Team Leader Details</label>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" name="team-leader" placeholder="Full Name" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="email" name="email" placeholder="Email" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="text" name="college" placeholder="College/University" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-medium mb-2">Team Members (max 3)</label>
+                        <div id="teamMembers" class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <input type="text" name="member1-name" placeholder="Member 1 Name" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="email" name="member1-email" placeholder="Member 1 Email" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <input type="text" name="member2-name" placeholder="Member 2 Name" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="email" name="member2-email" placeholder="Member 2 Email" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <input type="text" name="member3-name" placeholder="Member 3 Name" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="email" name="member3-email" placeholder="Member 3 Email" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="problemStatement" class="block text-gray-700 font-medium mb-2">Preferred Problem Statement</label>
+                        <select name="option-selected" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">Select a problem statement</option>
+                            <option value="waste">Waste Management Solutions</option>
+                            <option value="energy">Renewable Energy Applications</option>
+                            <option value="smartcity">Smart City Technologies</option>
+                            <option value="healthcare">Healthcare Innovations</option>
+                            <option value="open">Open Innovation Track</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="ideaDescription" class="block text-gray-700 font-medium mb-2">Brief Description of Your Idea (max 300 words)</label>
+                        <textarea name="description" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    </div>
+                    
+                    <div class="flex items-center mb-6">
+                        <input type="checkbox" id="terms" class="mr-2" required>
+                        <label for="terms" class="text-gray-700">I agree to the terms and conditions of the event</label>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-bold hover:bg-blue-700 transition duration-300">
+                        Submit Registration
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">Get In Touch</h3>
+                    <p class="text-gray-700 mb-6">Have questions about Ideathon or Prominence 2024? Reach out to our team for assistance.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Address</h4>
+                                <p class="text-gray-700">Innovation & Entrepreneurship Development Cell<br>Rajiv Gandhi Institute of Technology<br>Kottayam, Kerala</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-700">iedc@rit.ac.in</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Phone</h4>
+                                <p class="text-gray-700">+91 98765 43210</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">Event Location</h3>
+                    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/caa4d56d-46fc-42b6-83ff-7b13b2bac3d4.png" alt="Campus map showing the location of the Ideathon event at Rajiv Gandhi Institute of Technology, Kottayam with main buildings highlighted" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Main Auditorium</span>
+                        <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Block A</span>
+                        <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">24/7 Access</span>
+                        <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Food Court Nearby</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzc8rzrR71mceYhHWNdRDjKDhQ8lvELq8ORsqdwH_yWY_iEoLo_QG1WGlCJFZEeFjGJiQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => form.reset())
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+ 
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py
